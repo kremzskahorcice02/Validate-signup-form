@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <header><p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/kremzskahorcice02">Kolarova</a>.</p>
+  </header>
+  <main>
+    <section class="form">
+      <div class="form__text">
+        <h1 class="form__text-title">Learn to code by watching others</h1>
+        <p class="form__text-desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <p class="form__cta"><span class="form__cta-bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+      <form id="form" class="form__main" action="#">
+        <input id="firstName" type="text" name="firstName" placeholder="First Name"/>
+        <p class="alert">First Name cannot be empty</p>
+        <input id="lastName" type="text" name="lastName" value="" placeholder="Last Name"/>
+        <p class="alert">Last Name cannot be empty</p>
+        <input id="email" type="email" name="email" value="" placeholder="Email Address"/>
+        <p class="alert">Looks like this is not an email</p>
+        <input id="password" type="password" name="password" value="" placeholder="Password"/>
+        <p class="alert">Password must have at least 8 characters that include at least 1 lowercase character, 1 uppercase characters and 1 number</p>
+        <button type="submit" id="btn" >Claim your free trial</button>
+        <p class="form__main__TAS">By clicking the button, you are agreeing to our <a class="form__main__TAS-link" href="#">Terms and Services</a></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

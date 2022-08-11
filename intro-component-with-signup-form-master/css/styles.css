@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  background: url("../images/bg-intro-mobile.png");
+  background-color: hsl(0deg, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  width: 85%;
+  margin: 0 auto 10vh;
+}
+.form__text {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 7em;
+}
+.form__text-desc {
+  color: rgb(250, 243, 243);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 2em;
+}
+.form__cta {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.8;
+  background-color: hsl(248deg, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  margin-top: 5em;
+  cursor: pointer;
+}
+.form__cta-bold {
+  font-weight: 600;
+}
+.form__main {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.19);
+  padding: 20px;
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form__main > * {
+  display: block;
+  width: 100%;
+}
+.form__main > input {
+  padding: 15px;
+  margin-top: 10px;
+  border: 1px solid hsl(246deg, 25%, 77%);
+  border-radius: 5px;
+}
+.form__main > input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.form__main > input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.form__main > input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+.form__main > input:focus {
+  outline: 1px solid;
+  font-weight: 700;
+}
+.form__main .alert {
+  display: none;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 500;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: right;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.form__main button {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: hsl(154deg, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 3px 0px 0px hsl(154deg, 71%, 41%);
+  padding: 20px 15px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.form__main button:hover {
+  background-color: hsla(154deg, 59%, 51%, 0.765);
+}
+.form__main__TAS {
+  color: hsl(246deg, 25%, 77%);
+  font-size: 0.7rem;
+  line-height: 1.8;
+  padding: 5px 20px 0;
+}
+.form__main__TAS-link {
+  text-decoration: none;
+  color: hsl(0deg, 100%, 74%);
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 620px) {
+  .form {
+    width: 70%;
+  }
+  .form__cta {
+    width: 60%;
+    margin: 5em auto 0;
+  }
+}
+@media only screen and (min-width: 820px) {
+  .form {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .form {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  body {
+    background: url("../images/bg-intro-desktop.png");
+    background-color: hsl(0deg, 100%, 74%);
+  }
+  .form {
+    display: grid;
+    min-height: 100%;
+    min-width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 65%;
+    margin: 0;
+  }
+  .form__text {
+    grid-area: 2/1/3/2;
+    text-align: left;
+    padding: 0 20%;
+    margin-top: 6em;
+  }
+  .form__text-title {
+    font-size: 2.7rem;
+  }
+  .form__text-desc {
+    font-size: 0.9rem;
+  }
+  .form__cta {
+    grid-area: 1/2/2/3;
+    width: 80%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-left: 0;
+    align-self: end;
+  }
+  .form__main {
+    grid-area: 2/2/3/3;
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 30px;
+    margin-top: 3em;
+  }
+}
+.attribution {
+  color: rgb(46, 46, 46);
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.attribution a {
+  color: hsl(227deg, 13%, 13%);
+}/*# sourceMappingURL=styles.css.map */

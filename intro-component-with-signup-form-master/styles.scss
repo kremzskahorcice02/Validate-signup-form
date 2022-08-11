@@ -1,0 +1,220 @@
+@import 'colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: $text-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    background: url("../images/bg-intro-mobile.png");
+    background-color: $background-color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.form {
+
+    width: 85%;
+    margin: 0 auto 10vh;
+
+    &__text {
+        font-weight: 600;
+        line-height: 1.3;
+        margin-top: 7em;
+
+        &-desc {
+            color: rgb(250, 243, 243);
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-top: 2em;
+        }
+    }
+
+    &__cta {
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 1.8;
+        background-color: $cta;
+        border-radius: 10px;
+        box-shadow: 0px 7px 0px 0px rgba(0,0,0,0.1);
+        padding: 15px 30px;
+        margin-top: 5em;
+        cursor: pointer;
+
+        &-bold {
+            font-weight: 600;
+        }
+    }
+
+    &__main {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        margin-top: 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        & > * {
+            display: block;
+            width: 100%;
+        }
+
+        & > input {
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid $text-color-secondary;
+            border-radius: 5px;
+
+            &::placeholder { 
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.7rem;
+                font-weight: 600;
+            }
+
+            &:focus {
+                outline: 1px solid;
+                font-weight: 700;
+            }
+        }
+
+        & .alert {
+            display: none;
+            color: $background-color;
+            font-weight: 500;
+            font-size: 0.7rem;
+            font-style: italic;
+            text-align: right;
+            height: fit-content;   
+        }
+
+        & button {
+            color: $text-color;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: $btn;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 3px 0px 0px hsl(154, 71%, 41%);
+            padding: 20px 15px 15px;
+            margin-top: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: hsla(154, 59%, 51%, 0.765);
+            }
+        }
+
+        &__TAS {
+            color: $text-color-secondary;
+            font-size: 0.7rem;
+            line-height: 1.8;
+            padding: 5px 20px 0;
+
+            &-link {
+                text-decoration: none;
+                color: $background-color;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 620px) {
+
+        .form {
+            width: 70%;
+
+            &__cta {
+                width: 60%;
+                margin: 5em auto 0;
+            } 
+        }
+  }
+
+@media only screen and (min-width: 820px) {
+
+    .form {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .form {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+
+    body {
+        background: url('../images/bg-intro-desktop.png');
+        background-color: $background-color;
+    }
+
+    .form {
+        display: grid;
+        min-height: 100%;
+        min-width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 65%;
+        margin: 0;
+      
+        &__text {
+            grid-area: 2 / 1 / 3 / 2;
+            text-align: left;
+            padding: 0 20%;
+            margin-top: 6em;
+
+            &-title {
+                font-size: 2.7rem;
+            }
+
+            &-desc {
+                font-size: 0.9rem;
+            }
+        }
+
+        &__cta {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 80%;
+            height: max-content;
+            margin-left: 0;
+            align-self: end;
+        }
+
+        &__main {
+            grid-area: 2 / 2 / 3 / 3;
+            width: 80%;
+            height: fit-content;
+            padding: 30px;
+            margin-top: 3em;
+        }
+
+    }
+}
+
+.attribution {
+    color: rgb(46, 46, 46);
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    & a {
+        color: hsl(227, 13%, 13%);
+    }
+}
